@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<!--
+  This page was last redesigned by Ethan Cecchetti for Visit Day 2017.
+  If you have any maintenance questions, please contact him.
+-->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Cornell Computer Science &ndash; Admitted Grad Student Visit Day 2019</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Exo%202:600%7CLato:400,400i,700,700i,900%7CSource+Sans+Pro:400,600,700" rel="stylesheet">
+  <script src="jquery-2.1.4.min.js" type="text/javascript"></script>
+  <script src="visit-day.js" type="text/javascript"></script>
+</head>
+
+<body lang="EN-US" onload="initialize()">
+
+<header>
+  <div id="header_wrapper">
+    <div id="header_div">
+      <table id="header_table"><tr>
+        <td id="header_img_td">
+          <a id="header_img" href="http://www.cs.cornell.edu/"></a>
+        </td>
+        <td id="header_text_td">
+          <h1>Admitted Grad Student Visit Day 2021</h1>
+          <h2>March 29 &ndash; March 30</h2>
+        </td>
+      </tr></table>
+    </div>
+
+    <div id="nav_bar_wrapper"><div id="nav_bar">
+      <table id="nav_bar_table" class="js-off"><tr>
+          <td><div class="nav_bar_cell">
+              <div class="section">Cornell</div>
+              <ul class="link_list">
+                <li><a class="link" href="https://www.cornell.edu/">Cornell University</a></li>
+                <li><a class="link" href="https://cis.cornell.edu/">Cornell CIS</a></li>
+                <li><a class="link" href="https://www.cs.cornell.edu/">Cornell Computer Science</a></li>
+                <li><a class="link" href="https://tech.cornell.edu/">Cornell Tech (NYC)</a></li>
+              </ul>
+          </div></td>
+
+          <td><div class="nav_bar_cell">
+              <div class="section">Campus</div>
+              <ul class="link_list">
+                <li><div class="subsection">Ithaca</div></li>
+                <li><a class="link" href="https://www.cornell.edu/maps/">Campus Maps</a></li>
+                <li><a class="link" href="https://blogs.cornell.edu/gateshall/">Bill and Melinda <span class="nowrap">Gates Hall</span></a></li>
+                <li><a class="link" href="http://solarnooncam.coecis.cornell.edu/view/viewer_index.shtml">Gates Hall Roof Webcam</a></li>
+                <li><a class="link" href="http://www.cornell.edu/visiting/ithaca/live_views.cfm">Ho Plaza Webcam</a></li>
+                <li><a class="link" href="https://gradschool.cornell.edu/admissions/admitted-students/welcome-to-cornell-video/">Welcome to Cornell Video</a></li>
+                <li><a class="link" href="https://www.youtube.com/watch?v=GuM8vTq0jd4">What makes Cornell Special Video</a></li>
+                <li><a class="link" href="https://www.cornell.edu/video/gates-hall">Gates Hall Video</a></li>
+                <li class="divider"></li>
+              	<li><div class="subsection">New York City</div></li>
+                <li><a class="link" href="https://tech.cornell.edu/campus/">Campus Information</a></li>
+		<li><a class="link" href="https://tech.cornell.edu/campus/tata-innovation-center/">Tata Innovation Center</a></li>
+                <li><a class="link" href="https://tech.cornell.edu/visit-us/">Virtual Admissions Tour</a></li>
+		<li><a class="link" href="https://thehouseatcornelltech.com/residences/">The House</a></li>
+              </ul>
+          </div></td>
+
+          <td><div class="nav_bar_cell">
+              <div class="section">Travel</div>
+              <ul class="link_list">
+                <li><a class="link" href="https://fcs.cornell.edu/departments/transportation-delivery-services/campus-campus-bus-service/">Campus to Campus Bus <span class="nowrap">(Ithaca &#x27f7; NYC)</span></a></li>
+               <li><a class="link" href="https://www.ourbus.com/routes/ithaca-to-nyc">Our Bus
+                <span class="nowrap">(Ithaca &#x27f7; NYC)</span></a></li> 
+                <li><a class="link" href="https://us.megabus.com/">Mega Bus</a></li>
+                <li class="divider"></li>
+                <li><div class="subsection">Ithaca</div></li>
+                <li><a class="link" href="http://www.flyithaca.com/">Ithaca Airport (ITH)</a></li>
+                <li><a class="link" href="http://www.syrairport.org/">Syracuse Airport (SYR)</a></li>
+                <li><a class="link" href="https://bigdslimos.com/">Big D Limo</a></li>
+                <li><a class="link" href="https://www.google.com/maps/place/Hilton+Garden+Inn+Ithaca">Driving Directions</a></li>
+		<li><a class="link" href="https://hiltongardeninn3.hilton.com/en/hotels/new-york/hilton-garden-inn-ithaca-ITHIGGI/index.html">Ithaca Hilton Garden Inn</a></li>
+
+            <!--    <li><a class="link" href="https://www.marriott.com/hotels/travel/ithmc-ithaca-marriott-downtown-on-the-commons/">Ithaca Marriott</a></li> -->
+                <!--
+                <li><a class="link" href="http://www.statlerhotel.cornell.edu/">Statler Hotel</a></li>
+                <li><a class="link" href="http://hiltongardeninn3.hilton.com/en/hotels/new-york/hilton-garden-inn-ithaca-ITHIGGI/index.html">Hilton Garden Inn</a></li>
+                -->
+                <li class="divider"></li>
+                <li><div class="subsection">New York City</div></li>
+		<li><a class="link" href="https://bentleyhotelnyc.com/">Bentley Hotel</a></li>
+                <li><a class="link" href="https://www.panynj.gov/airports/jfk.html">Kennedy Airport (JFK)</a></li>
+                <li><a class="link" href="https://www.panynj.gov/airports/newark-liberty.html">Newark Airport (EWR)</a></li>
+                <li><a class="link" href="https://www.amtrak.com/servlet/ContentServer?pagename=am/am2Station/Station_Page&code=NYP">Penn Station (Amtrak)</a></li>
+                <li><a class="link" href="https://www.panynj.gov/bus-terminals/port-authority-bus-terminal.html">Port Authority Bus Terminal</a></li>
+                <li><a class="link" href="http://rioc.ny.gov/302/Tram">Roosevelt Island Tram</a></li>
+              </ul>
+          </div></td>
+
+          <td><div class="nav_bar_cell">
+              <div class="section">Local</div>
+              <ul class="link_list">
+                <li><div class="subsection">Ithaca</div></li>
+                <li><a class="link" href="https://www.tcatbus.com/">TCAT (Local Buses)</a></li>
+                <li><a class="link" href="http://www.visitithaca.com/">Ithaca Tourism</a></li>
+                <li><a class="link" href="https://www.visitithaca.com/dining/">Ithaca Dining</a></li>
+                <li><a class="link" href="https://www.wunderground.com/q/14853">Ithaca Weather</a></li>
+                <li class="divider"></li>
+                <li><div class="subsection">New York City</div></li>
+                <li><a class="link" href="https://www.nycgo.com/boroughs-neighborhoods/manhattan/roosevelt-island/">Roosevelt Island Guide</a></li>
+                <li><a class="link" href="http://web.mta.info/maps/submap.html">Subway Map</a></li>
+                <li><a class="link" href="https://www.nytimes.com/video/new-york-city-neighborhoods-block-by-block">New York Neighborhoods</a></li>
+                <li><a class="link" href="https://www.wunderground.com/us/ny/new-york/">New York Weather</a></li>
+              </ul>
+          </div></td>
+
+          <td><div id="social_media_div">
+              <div class="section">
+                <a id="youtube" class="social_media_link" href="https://www.youtube.com/channel/UC30gHDEkx8V-9aIoDHzz-zA"></a>
+                <a id="facebook" class="social_media_link" href="https://www.fb.me/cscornell"></a>
+                <a id="twitter" class="social_media_link" href="https://www.twitter.com/cs_cornell"></a>
+              </div>
+          </div></td>
+      </tr></table>
+    </div></div>
+
+    <div id="slideshow_div">
+      <ul id="slideshow_list">
+        <li id="gates_hall" class="slideshow_image">
+          <div class="slideshow_bottomer">
+            <div class="slideshow_centerer">
+              <span class="slideshow_caption">
+                Bill and Melinda Gates Hall &ndash; Home to Cornell's Computer Science Department
+              </span>
+            </div>
+          </div>
+        </li>
+        <li id="gorge_trail" class="slideshow_image">
+          <div class="slideshow_bottomer">
+            <div class="slideshow_centerer">
+              <span class="slideshow_caption">
+                Cascadilla Gorge Trail &ndash; One of the many picturesque locations in and around Ithaca
+              </span>
+            </div>
+          </div>
+        </li>
+    
+ 	<li id="tata_innovation_center" class="slideshow_image">
+          <div class="slideshow_bottomer">
+            <div class="slideshow_centerer">
+              <span class="slideshow_caption">
+                The Tata Innovation Center &ndash; A Cornell Tech industry and academia collaboration center.
+              </span>
+            </div>
+          </div>
+        </li>
+
+	<li id="bloomberg_center" class="slideshow_image">
+          <div class="slideshow_bottomer">
+            <div class="slideshow_centerer">
+              <span class="slideshow_caption">
+                The Bloomberg Center &ndash; The main faculty and student workspace on Roosevelt Island.
+              </span>
+            </div>
+          </div> 
+        </li> 
+      </ul>
+      <div class="slideshow_bottomer">
+        <div class="slideshow_centerer">
+          <div id="slideshow_selector_div">
+            <div class="slideshow_selector_button selected" onclick="setSlideshow($(this))"></div>
+            <div class="slideshow_selector_button" onclick="setSlideshow($(this))"></div>
+            <div class="slideshow_selector_button" onclick="setSlideshow($(this))"></div>
+		<div class="slideshow_selector_button" onclick="setSlideshow($(this))"></div> 
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div id="info_div">
+  <div id="welcome_msg_div">
+    <p>
+    To all students admitted to the Cornell Computer Science PhD Program,
+    </p>
+
+    <p>
+    On behalf of Cornell and the CS graduate student community, congratulations!
+    Cornell is an excellent school, home to many enthusiastic researchers with diverse interests.
+    We are excited to host you as you consider Cornell for your graduate studies.</p>
+    <p>Due to ongoing questions and uncertainties surrounding the spread  of the COVID-19 virus (for current Cornell updates and policies, see<a href="https://www.cornell.edu/coronavirus/"> https://www.cornell.edu/coronavirus/</a>) we have  decided to move our CS PhD visit days scheduled for March 29-30 to an  all-virtual model, on both the Ithaca and the New York City campuses.&nbsp; We  will combine the virtual visit for both campuses on <strong>Monday, March 29</strong> to <strong>Tuesday, March 30.</strong></p>
+    <p>The below schedule is a work in progress. &nbsp;Please continue to  revisit this page for updates.&nbsp; When appropriate we will provide zoom  links to talks.&nbsp; You will receive your personalized schedule prior to  Monday, March 29 with zoom links to individual faculty meetings.</p>
+    <p>Although this obviously wasn't part of the original plan, we want  to reemphasize how excited we are to meet you all (if now virtually).&nbsp; </p>
+    <p>We hope you take a moment to visit our tabs above and watch the videos under &quot;campus&quot;</p>
+    <p>If you have any questions, please do not hesitate to contact us at <a onmouseover="setEmail($(this), 'phdvisitday', 'list.cs.cornell.edu')" href="mailto:phdvisitday@list.cs.cornell.edu">phdvisitday@list.cs.cornell.edu</a></p>
+    <p>&ldquo;See&rdquo; you soon!</p>
+    <p>Field of Computer Science</p>
+    <table>
+      <tbody>
+        <tr>
+          <td><p align="left">&nbsp;</p></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="schedule_div">
+    <h3>Visit Day Schedule</h3>
+
+    <table id="schedule_day_selector_table">
+      <tr>
+        <td id="day1_sched_btn" class="sched_btn unselected" onclick="selectCalDay('#day1_sched')">March 29</td>
+        <td id="day2_sched_btn" class="sched_btn unselected" onclick="selectCalDay('#day2_sched')">March 30</td>
+      </tr>
+    </table>
+
+    <!-- day schedule template -->
+    <div id="day0_sched" class="schedule">
+    <table width="81%" class="info_table">
+      <!--
+      <tr>
+        <td class="time">20:30 &ndash; 22:00</td>
+        <td>
+          Viewing session at Cornell's on-campus observatory (subject to weather)
+          <div class="locale"><a href="http://coursewiki.astro.cornell.edu/Fuertes/WebHome">Fuertes Observatory</a></div>
+        </td>
+      </tr>
+      -->
+    </table>
+    </div>
+
+    <div class="date_row" onclick="toggleCalDay('#day1_sched')">Monday, March 29, 2020 (Ithaca)</div>
+    <div id="day1_sched" class="schedule">
+    <table class="info_table">
+
+      <tr>
+        <td class="time">10:15 &ndash;10:45</td>
+        <td align="left">
+         <ul>
+          <li>
+            Welcome to Cornell
+              <div class="locale">
+		      <p><b>Eva Tardos, Department Chair</b><br/><br/>
+                      Zoom: <br/>
+                       <a class="locale" target="_blank" href="https://cornell.zoom.us/j/94816544448?pwd=QXJtZGk0M0E4NHFkUDkwR2lhMTZUUT09">https://cornell.zoom.us/j/94816544448?pwd=QXJtZGk0M0E4NHFkUDkwR2lhMTZUUT09</a>
+                      </p>
+              </div>
+          </li>
+        </ul>
+       </td>
+      </tr>
+
+      <tr>
+	<td class="time">10:50 &ndash; 11:10</td>
+        <td align="left">
+         <ul>
+          <li>
+            Intro to Cornell Tech
+              <div class="locale">
+		      <p><b>Serge Belongie, Assoc Dean, Cornell Tech</b><br/><br/>
+                      Please note: Same zoom link as Welcome; please do not disconnect<br/>
+                      </p>
+              </div>
+          </li>
+        </ul>
+       </td>
+      </tr>
+
+      <tr>
+        <td class="time">11:10-12:00</td>
+	<td align="left">
+         <ul>
+          <li>
+	    Meetings with Faculty
+            <div class="locale">
+		    <p>OR<br/><br/>
+		    Diversity Programs at Cornell<br/><br/>
+	            Zoom:<br/>
+	            <a class="locale" target="_blank" href="https://cornell.zoom.us/j/95111250580?pwd=ZnRZaThuenFZSEE4SG9ETGQ3UGxKdz09">https://cornell.zoom.us/j/95111250580?pwd=ZnRZaThuenFZSEE4SG9ETGQ3UGxKdz09</a>
+	            <a id="copyInvitation2" href="javascript:;" role="button" aria-modal="true" aria-labelledby="copyInvitation copy-invite-title"></a>
+	     </p>
+            </div>
+	   </li>
+          </ul>
+	</td>
+      </tr>
+
+      <tr>
+        <td class="time">12:00 &ndash; 13:30</td>
+	<td align="left">
+
+          <table class="collapse_header">
+            <td class="collapse_header_title">Area Talks</td>
+            <!--
+            <td><div class="collapse_button_fake">Areas coming soon</div></td>
+            -->
+            <td>
+		<div id="area_lunches_arrow" class="collapse_button" onclick="toggleSubEvents('#area_lunches')">
+                <span class="arrow_dir">Show</span> areas
+            	</div>
+	    </td>
+	  </table>
+
+          <div id="area_lunches" class="sub_events">
+            <ul>
+            <li><strong>- &nbsp;<u>AI/ML/Computational Biology</u></strong><u></u>
+<div class="locale">
+  <p>Zoom: <br/>
+			<a href="https://cornell.zoom.us/my/hirsh?pwd=REY1V1NHT0o4RXFKaDFybTVxbkRrdz09" target="_blank">https://cornell.zoom.us/my/hirsh?pwd=REY1V1NHT0o4RXFKaDFybTVxbkRrdz09</a>
+		  </p>
+              </div>
+            </li>
+
+	    <li><strong>- &nbsp;<u>Graphics/Scientific Computing/HCI/Vision</u></strong>
+            <div class="locale">
+		<p>Zoom: <br/>
+		<a href=" https://cornell.zoom.us/j/93263628590?pwd=QjJwUytyUGVPbFVPdEdxM0w5cjBoUT09" target="_blank"> https://cornell.zoom.us/j/93263628590?pwd=QjJwUytyUGVPbFVPdEdxM0w5cjBoUT09</a>
+		</p>
+            </div>
+
+	    </li>
+	    <li class="locale"><em>Password: Cornell</em></li>
+
+            <li><strong>- &nbsp;<u>Robotics</u></strong>
+            <div class="locale">
+                <p>Zoom: <br/>
+                <a href="https://cornell.zoom.us/my/tapomayukh" target="_blank">https://cornell.zoom.us/my/tapomayukh</a>
+                </p>
+            </div>
+
+            </li>
+            <li class="locale"><em>Password: Cornell</em></li>
+
+            <li>
+		<strong>- &nbsp;<u>Programming Languages/ SWE/ Architecture</u></strong>
+<div class="locale">
+  <p>Zoom: <br/>
+			 <a class="locale" target="_blank" href="https://cornell.zoom.us/j/93501459731?pwd=SDEwZjF3K1cvT1MrM3pnd0VCVWNrZz09">https://cornell.zoom.us/j/93501459731?pwd=SDEwZjF3K1cvT1MrM3pnd0VCVWNrZz09</a>
+			</p>
+            </div>
+            </li>
+
+            <li><strong>- &nbsp;<u>Theory</u></strong>
+<div class="locale">
+  <p>Zoom: <br/>
+			  <a class="locale" target="_blank" href="https://cornell.zoom.us/j/94967330092?pwd=N1Vpb3lxZG9ZaE40UVh1emRBeHJoUT09">https://cornell.zoom.us/j/94967330092?pwd=N1Vpb3lxZG9ZaE40UVh1emRBeHJoUT09</a><br/>
+                </p>
+               </div>
+            </li>
+
+	    <li><strong>- &nbsp;<u>Systems/Database/Security</u></strong>  
+<div class="locale">
+  <p>Zoom: <br/>
+                  <a class="locale" target="_blank" href="https://cornell.zoom.us/j/95278478050?pwd=T21NSnJnUDllSlYrd0tSU3BKSlZFQT09">https://cornell.zoom.us/j/95278478050?pwd=T21NSnJnUDllSlYrd0tSU3BKSlZFQT09</a>
+                  </p>
+              </div>
+            </li>
+
+	    </ul>
+	   </div>
+      </tr>
+
+      <tr>
+        <td class="time">13:30 &ndash; 14:30</td>
+	<td align="left">
+         <ul>
+          <li>
+            Gender Diversity in Computing Tea/Coffee</li>
+          <li><span class="locale">Zoom:<br/>
+              <a class="locale" target="_blank" href="https://cornell.zoom.us/j/93206558126?pwd=bDdISEdSbjVyODZ4SytvU0p1VjAxQT09">https://cornell.zoom.us/j/93206558126?pwd=bDdISEdSbjVyODZ4SytvU0p1VjAxQT09</a></span> <a id="copyInvitation" href="javascript:;" role="button" aria-modal="true" aria-labelledby="copyInvitation copy-invite-title"></a>
+<div class="locale">
+  <p>OR<br/><br/>
+    Meetings with Faculty<br/><br/>
+  </p>
+</div>
+          </li>
+         </ul>
+      </tr>
+
+      <tr>
+        <td class="time">14:30 &ndash; 15:30</td>
+	<td align="left">
+         <ul>
+          <li>
+           International Student Coffee</li>
+          <li><span class="locale">Zoom: <br/>
+              <a class="locale" target="_blank" href="https://cornell.zoom.us/j/91824697359?pwd=SExtb0ZCR1JQVldsVGNSN1VPTjlOQT09">https://cornell.zoom.us/j/91824697359?pwd=SExtb0ZCR1JQVldsVGNSN1VPTjlOQT</a></span><a class="locale" target="_blank" href="https://cornell.zoom.us/j/91824697359?pwd=SExtb0ZCR1JQVldsVGNSN1VPTjlOQT09">09</a> <a id="copyInvitation3" href="javascript:;" role="button" aria-modal="true" aria-labelledby="copyInvitation copy-invite-title"></a> </li>
+	     <div class="locale">
+                    <p>OR<br/><br/>
+                    Meetings with Faculty<br/><br/>
+                </p>
+              </div>
+          </li>
+        </ul>
+      </tr>	
+   
+      <tr>
+        <td class="time">15:30 &ndash; 17:00</td>
+ 	<td><ul>
+          <li>
+           Informal Information Session with Grad Students</li>
+          <li><span class="locale">Zoom: <br/>
+              <a class="locale" target="_blank" href="https://cornell.zoom.us/j/94097292418?pwd=Q0FUNGRBS2NtZDE0ZmpmazBuVWV1Zz09">https://cornell.zoom.us/j/94097292418?pwd=Q0FUNGRBS2NtZDE0ZmpmazBuVWV1Zz09</a></span> <a id="copyInvitation4" href="javascript:;" role="button" aria-modal="true" aria-labelledby="copyInvitation copy-invite-title"></a> </li>
+             <div class="locale">
+                    <p>AND<br/><br/>
+                    Meetings with Faculty<br/><br/>
+                    </p>
+              </div>
+          </li>
+        </ul>
+      </tr>   
+
+      <tr>
+        <td colspan="2" class="container">
+          <table class="info_subtable">
+            <tr>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+    </table>
+    </div>
+
+
+    <div class="date_row" onclick="toggleCalDay('#day2_sched')">Tuesday, March 30, 2020 </div>
+    <div id="day2_sched" class="schedule">
+    <table class="info_table">
+      <tr class="info_subtable">
+        <td class="time">08:00-10:00</td>
+        <td> Meetings with Faculty
+          <div class="locale"></div></td>
+      </tr>
+     <tr>
+        <td width="25%" height="58" class="time">09:00 &ndash; 10:00</td>
+        <td width="75%"><ul>
+          <li>LEAP Breakfast</li>
+          <li class="small"><em>(LEAP is an Alliance  of 11 top computer science programs to increase the diversity of the future  leadership in the professoriate in computing, focusing on students who  self-identify as African American, Black, Hispanic,  Latinx, American Indian, Alaska Native, Native Hawaiian, Pacific Islander, persons  with a disability)</em></li>
+	  <li><span class="locale">Zoom:<br/>
+			   <a class="locale" target="_blank" href="https://cornell.zoom.us/j/94445397477?pwd=RFJ5WHJhR0xrYzE1cWNkU002U2tZZz09">https://cornell.zoom.us/j/94445397477?pwd=RFJ5WHJhR0xrYzE1cWNkU002U2tZZz09</a> <a id="copyInvitation6" href="javascript:;" role="button" aria-modal="true" aria-labelledby="copyInvitation copy-invite-title"></a></span><br>
+          </li>
+          <li>
+  <div class="locale"></div>
+          </li>
+        </ul></td>
+      </tr>
+
+      <tr>
+        <td class="time">10:00 &ndash; 11:00</td>
+        <td><ul>
+          <li>Cornell Tech Student Panel
+            <div class="locale">
+		    <p>Zoom:<br/>
+		     <a class="locale" target="_blank" href="https://www.google.com/url?q=https%3A%2F%2Fcornell.zoom.us%2Fj%2F98476578482%3Fpwd%3DN01PZkREVHhseHE3SENXVGlucTlyUT09&sa=D&ust=1615127420154000&usg=AOvVaw3-hgUksUQcT0jpUokJugtE" target="_blank">https://cornell.zoom.us/j/98476578482?pwd=N01PZkREVHhseHE3SENXVGlucTlyUT09</a></p>
+            </div>
+          </li>
+          <li class="and_or"></li>
+          <li></li>
+        </ul></td>
+      </tr>
+
+      <tr>
+        <td class="time">11:00 &ndash; 11:30</td>
+        <td nowrap>
+          Cornell Tech Housing
+            <div class="locale">
+		    <p>Zoom:<br/>
+		     <a class="locale" target="_blank" href="https://cornell.zoom.us/j/96347973322?pwd=THlvVU9MYU9pRlZ6MVYzU3E2MXBPQT09">https://cornell.zoom.us/j/96347973322?pwd=THlvVU9MYU9pRlZ6MVYzU3E2MXBPQT09</a></p>
+</div>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">11:30 &ndash; 13:00</td>
+	<td align="left">
+                <uL>
+                  <li>NLP Area Lunch
+            <div class="locale">
+                    <p>Zoom:<br/>
+                     <a href="https://cornell.zoom.us/j/93650670753?pwd=RGZRRVpObGdqRHVCUDU1T3R4TWxBQT09">https://cornell.zoom.us/j/93650670753?pwd=RGZRRVpObGdqRHVCUDU1T3R4TWxBQT09</a></p>
+                    <p>Password: 821131</p>
+                    <p><a class="locale" target="_blank" href="zoom_url"></a></p>
+            </div>
+        </td>
+      </tr>
+
+<!--         <td colspan="2" class="container"><table class="info_subtable">
+-->
+      <tr>
+              <td class="time">12:30 &ndash; 14:00</td>
+              <td align="left">
+		<uL>
+		  <li>Meetings with Students
+		    <div class="locale">
+		    </div>
+		  </li>
+		</ul>
+	      </td>
+      </tr>
+
+      <tr>  
+              <td class="time">14:00 &ndash; 16:00</td>
+              <td align="left">
+                <uL>
+                  <li>Meetings with faculty
+                    <div class="locale">
+                    </div>
+                  </li>
+                </ul>
+              </td>
+      </tr> 
+      
+      <tr>
+        <td class="time">16:15 &ndash;16:45</td>
+        <td align="left">
+         <ul>
+          <li>Bloomberg Center Tour at  Cornell Tech
+            <div class="locale">
+                      <p><b>Yoav Artzi</b><br/><br/>
+                      Zoom: <br/>
+                      <span class="locale"><a href="https://cornell.zoom.us/j/98323405346?pwd=VENQUzQ1Y1BUUmJYMHB2QmdYT3RzQT09" target="_blank">https://cornell.zoom.us/j/98323405346?pwd=VENQUzQ1Y1BUUmJYMHB2QmdYT3RzQT09</a> </span></p>
+            </div>
+          </li>
+          <li class="locale">Password: 981503</li>
+          <li class="locale">
+            <p>*Because  the event involves faculty in-person presence on campus, it depends on the  campus status. Please verify it's still on just before it starts.&nbsp;</p>
+          </li>
+         </ul>
+       </td>
+      </tr>
+
+      <!-- separator or table rows blank -->
+      <!--
+      <tr>
+              <td height="13" colspan="2" class="spacer"></td>
+      </tr>
+
+      <tr>
+              <td height="13" colspan="2" class="spacer"></td>
+      </tr>
+      -->
+
+<!--
+          </table>
+        </td>
+-->
+
+
+      </tr>
+      </table>
+        </td>
+      </tr>
+    </table>
+    </div>
+
+
+    <div id="day3_sched" class="schedule">
+      <table class="info_table">
+      <tr>
+      </tr>
+      </table>
+  </div>
+  </div>
+
+
+  <div id="czar_info_div">
+    <h3>Visit Day Student Organizers</h3>
+    <table class="info_table">
+      <tr>
+        <th width="32%"></th>
+        <th width="33%">Name</th>
+        <th width="17%" class="campus">Campus</th>
+        <th width="18%">Contact <span class="email">(@cs.cornell.edu)</span></th>
+      </tr>
+
+     <tr>
+        <td><img src="ayaka.jpg" alt="" width="151" height="176"/></td>
+        <td>Ayaka Yorihiro</td>
+        <td class="campus">Ithaca</td>
+        <td class="email">ayaka</td>
+      </tr>
+
+      <tr>
+        <td><img src="si yi.jpg" width="148" height="161"></td>
+        <td>Si Yi (Cathy) Meng</td>
+        <td class="campus">Ithaca</td>
+        <td class="email">Siyimeng</td>
+      </tr>
+   
+      <tr>
+        <td><img src="Chinasa Okolo.pdf" width="147" height="187"></td>
+        <td>Chinasa Okolo</td>
+        <td class="campus"><p>Ithaca</p></td>
+        <td class="email">chinasa</td>
+      </tr>
+    <tr>
+        <td><img src="Guandao.jpg" width="152" height="194"></td>
+        <td>Guandao Yang</td>
+        <td class="campus">Ithaca</td>
+        <td class="email">guandao</td>
+      </tr>
+
+
+      <tr>
+        <td><img src="Lin cheng.jpg" alt="" width="147" height="187"></td>
+        <td>Lin Cheng</td>
+        <td class="campus">Ithaca</td>
+        <td class="email">lcheng10</td>
+      </tr>
+
+      <tr>
+        <td><img src="Ruojin.jpg" alt="" width="140" height="175"></td>
+        <td>Ruojin Cai</td>
+        <td class="campus">Ithaca</td>
+        <td class="email">ruojin</td>
+      </tr>
+
+      <tr>
+        <td><img src="Sishan.jpg" alt="" width="140" height="186"></td>
+        <td>Sishan Long</td>
+        <td class="campus">Ithaca</td>
+        <td class="email">sishanlong</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>

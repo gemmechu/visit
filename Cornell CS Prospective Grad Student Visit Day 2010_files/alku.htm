@@ -1,0 +1,790 @@
+
+<!-- saved from url=(0063)http://www.notkewl.com/myweather/alku.asp?paikka=14850&merkki=0 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><style>
+/* -------Stocks and Weather------- */
+div.stocks-weather {position:absolute;top:127px;left:580px}
+span.mainicon {position:absolute;top:17px;_top:17px;left:210px}
+p.stocks-weather {line-height:2px}
+span.weathertitle {color:#3399cc;font-family:verdana;font-size:10pt;font-weight:bold}
+span.weathertitlekeski {color:#3399cc;font-family:verdana;font-size:9pt;font-weight:bold}
+span.weathertitlepieni {color:#3399cc;font-family:verdana;font-size:8pt;font-weight:bold}
+.weathertitle {color:#000000;font-family:verdana;font-size:10pt;font-weight:bold}
+.weathertitlesmall {color:#000000;font-family:verdana;font-size:9pt;font-weight:bold}
+td.stocks-weather_content {color:#000000; font-size:7pt; font-family:verdana; text-decoration:none; }
+div.weatherscroll {overflow:auto; font-size:7pt;font-family:verdana; width:280px; height : 218px; }
+
+div.stocks-weatherbox {background-image: url(images/stockweather_bg.jpg);width:280px; _width : 280px; height : 218px; border:1px #d3d3d3 solid;  border-top:0px;border-bottom:0px;border-right:0px;border-left:0px;}
+.stocks-weatherbox
+{ color:#000000;
+  background-color:FFFFFF;
+  scrollbar-face-color:#c6c6c6;
+  scrollbar-arrow-color:#FFFFFF;
+  scrollbar-track-color:#dddddd;
+  scrollbar-shadow-color:#c6c6c6;
+  scrollbar-highlight-color:#bbbbbb;
+  scrollbar-3dlight-color:#dddddd;
+  scrollbar-darkshadow-Color:#dddddd;
+}
+</style>
+
+</head><body marginwidth="0" marginheight="0"><div id="weather" class="stocks-weatherbox" style="display:block">
+<span id="saa3" class="mainicon"><img src="./Cornell CS Prospective Grad Student Visit Day 2010_files/33.png" name="saakuva"></span>
+<table border="0" cellspacing="0" cellpadding="0" width="280">
+<tbody><tr><td colspan="5"><span class="weathertitle"> &nbsp;Current Temperature</span></td></tr>
+	<tr><td width="4" rowspan="2"></td>
+		<td valign="top" class="stocks-weather_content" colspan="2">
+		<span style="font-family:verdana, arial;font-size:7pt;"><span style="font-family:verdana, arial;color:0033cc" id="locteksti">Location:</span> <span id="saa22">Ithaca, NY (14850)</span></span>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" class="stocks-weather_content" width="130">
+			<span id="saa2">Fair</span><br>
+			<span id="saa5">Wind NNW</span>&nbsp;<span id="windat"></span><span id="saa6">5</span><span id="saa0">mph</span><br>
+			<span id="saa4">Humidity: 60%</span>
+			<span id="saa8"><br>Feels like: -2°F</span>
+		</td>
+		<td valign="middle" align="center" class="stocks-weather_content" width="90">
+			<font size="+1" color="ec008c"><b>&nbsp;<span id="saa1">7°</span><span id="saa21">F</span></b></font>&nbsp;&nbsp;<span id="saa7"></span>
+		</td>
+		<td valign="top" align="left" class="stocks-weather_content" width="60" colspan="2">
+
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" height="10"></td>
+	</tr>
+</tbody></table>
+
+<div id="alaosa" style="display: block; ">
+
+<span class="stocks-weather"> </span>
+<table background="" align="center" cellpadding="2" width="280" border="0" cellspacing="0">
+	<tbody><tr>
+		<td background="./Cornell CS Prospective Grad Student Visit Day 2010_files/3dayforecastbg.jpg" height="16" colspan="3" class="stocks-weather_content">
+			&nbsp; <b>Forecast</b> - <span style="font-size:7pt;color:707070;font-family:verdana,arial" id="mainos">Click day for detailed forecast.</span>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" height="5"></td>
+	</tr>
+	<tr>
+	
+		<td align="center" style="border-right-style: solid; border-right-color: #898989; border-right-width: 1px;" valign="top" width="84" class="stocks-weather_content">
+		<!--day1 date-->
+		<b title="Click for detailed forecast"><span id="saa11" class="weathertitlekeski" onclick="naytadetails1();;" onmouseover="this.style.cursor=&#39;pointer&#39;">Tonight</span></b><br>
+		<!--day1 image-->
+		<span id="saa12"><img src="./Cornell CS Prospective Grad Student Visit Day 2010_files/29.png" name="saakuva"></span><br>
+		<!--day1 hi-->
+		<span id="saa9">Lo 5°</span><br>
+		<!--day1 low-->
+		&nbsp;<span id="saa10"></span>
+		</td>
+		<td valign="top" style="border-right-style: solid; border-right-color: #898989; border-right-width: 1px;" align="center" width="84" class="stocks-weather_content">
+		<!--day2 date-->
+		<b title="Click for detailed forecast"><span id="saa15" class="weathertitlekeski" onclick="naytadetails2();;" onmouseover="this.style.cursor=&#39;pointer&#39;">Tuesday</span></b><br>
+		<!--day2 image-->
+		<span id="saa16"><img src="./Cornell CS Prospective Grad Student Visit Day 2010_files/30.png" name="saakuva"></span><br>
+		<!--day2 hi-->
+		<span id="saa13">Hi 19°</span><br>
+		<!--day2 low-->
+		&nbsp;<span id="saa14">Lo 1°</span>
+		</td>
+		<td valign="top" align="center" width="83" class="stocks-weather_content">
+		<!--day3 date-->
+		<b title="Click for detailed forecast"><span id="saa19" class="weathertitlekeski" onclick="naytadetails3();;" onmouseover="this.style.cursor=&#39;pointer&#39;">Wednesday</span></b><br>
+		<!--day3 image-->
+		<span id="saa20"><img src="./Cornell CS Prospective Grad Student Visit Day 2010_files/34.png" name="saakuva"></span><br>
+		<!--day3 hi-->
+		<span id="saa17">Hi 31°</span><br>
+		<!--day3 low-->
+		&nbsp;<span id="saa18">Lo 17°</span>
+		</td>
+	</tr>
+</tbody></table>
+</div>
+
+
+</div>
+
+
+
+        	<div id="tunneittain1" class="stocks-weatherbox" style="display:none">
+
+<table border="0" cellspacing="0" cellpadding="0" width="280">
+	<tbody><tr>
+		<td colspan="2" height="2"></td>
+	</tr>
+<tr><td width="200"><span class="weathertitle"> &nbsp;Forecast - Today</span></td><td width="60" align="right"> <span class="weathertitle" onclick="naytadetails1();;" onmouseover="this.style.cursor=&#39;pointer&#39;" title="Close detailed forecast"><font color="#ec008c">Close</font></span> &nbsp; &nbsp;</td></tr>
+
+</tbody></table>
+
+<span class="stocks-weather"> </span>
+<table background="" align="center" cellpadding="2" width="280" border="0" cellspacing="0">
+	<tbody><tr>
+		<td colspan="3" height="5"></td>
+	</tr>
+	<tr>
+		<td align="center" style="border-right-style: solid; border-right-color: #898989; border-right-width: 1px;" valign="top" width="84" class="stocks-weather_content">
+		<!--day1 date-->
+		<span id="ennuste0" class="weathertitlepieni">12am</span><br>
+		<!--day1 image-->
+		<span id="ennuste6"><img src="./Cornell CS Prospective Grad Student Visit Day 2010_files/ennuste_26.png" name="saakuva"></span><br>
+		<!--day1 hi-->
+		<span id="ennuste12">9°F</span><br>
+		<!--day1 low-->
+		<span id="ennuste18">Feels like -1°F</span>
+		</td>
+		<td valign="top" style="border-right-style: solid; border-right-color: #898989; border-right-width: 1px;" align="center" width="84" class="stocks-weather_content">
+		<!--day1 date-->
+		<span id="ennuste1" class="weathertitlepieni">3am</span><br>
+		<!--day1 image-->
+		<span id="ennuste7"><img src="./Cornell CS Prospective Grad Student Visit Day 2010_files/ennuste_26.png" name="saakuva"></span><br>
+		<!--day1 hi-->
+		<span id="ennuste13">9°F</span><br>
+		<!--day1 low-->
+		<span id="ennuste19">Feels like -2°F</span>
+		</td>
+		<td valign="top" align="center" width="83" class="stocks-weather_content">
+		<!--day1 date-->
+		<span id="ennuste2" class="weathertitlepieni">6am</span><br>
+		<!--day1 image-->
+		<span id="ennuste8"><img src="./Cornell CS Prospective Grad Student Visit Day 2010_files/ennuste_26.png" name="saakuva"></span><br>
+		<!--day1 hi-->
+		<span id="ennuste14">6°F</span><br>
+		<!--day1 low-->
+		<span id="ennuste20">Feels like -5°F</span>
+		</td>
+	</tr>
+
+
+	<tr>
+		<td colspan="3" height="3"><img src="./Cornell CS Prospective Grad Student Visit Day 2010_files/spacer.gif" height="4"></td>
+	</tr>
+	<tr>
+		<td align="center" style="border-right-style: solid; border-right-color: #898989; border-right-width: 1px;" valign="top" width="84" class="stocks-weather_content">
+		<!--day1 date-->
+		<span id="ennuste3" class="weathertitlepieni">9am</span><br>
+		<!--day1 image-->
+		<span id="ennuste9"><img src="./Cornell CS Prospective Grad Student Visit Day 2010_files/ennuste_28.png" name="saakuva"></span><br>
+		<!--day1 hi-->
+		<span id="ennuste15">8°F</span><br>
+		<!--day1 low-->
+		<span id="ennuste21">Feels like -4°F</span>
+		</td>
+		<td valign="top" style="border-right-style: solid; border-right-color: #898989; border-right-width: 1px;" align="center" width="84" class="stocks-weather_content">
+		<!--day1 date-->
+		<span id="ennuste4" class="weathertitlepieni">12pm</span><br>
+		<!--day1 image-->
+		<span id="ennuste10"><img src="./Cornell CS Prospective Grad Student Visit Day 2010_files/ennuste_30.png" name="saakuva"></span><br>
+		<!--day1 hi-->
+		<span id="ennuste16">14°F</span><br>
+		<!--day1 low-->
+		<span id="ennuste22">Feels like 1°F</span>
+		</td>
+		<td valign="top" align="center" width="83" class="stocks-weather_content">
+		<!--day1 date-->
+		<span id="ennuste5" class="weathertitlepieni">3pm</span><br>
+		<!--day1 image-->
+		<span id="ennuste11"><img src="./Cornell CS Prospective Grad Student Visit Day 2010_files/ennuste_30.png" name="saakuva"></span><br>
+		<!--day1 hi-->
+		<span id="ennuste17">17°F</span><br>
+		<!--day1 low-->
+		<span id="ennuste23">Feels like 5°F</span>
+		</td>
+			</tr><tr>
+		<td colspan="3" height="3"><img src="./Cornell CS Prospective Grad Student Visit Day 2010_files/spacer.gif" height="2"></td>
+	</tr>
+	
+		<tr>
+		<td class="stocks-weather_content" colspan="3">&nbsp;Sunrise: <span id="ennuste24">6:54 AM</span> &nbsp; &nbsp; Sunset: <span id="ennuste25">5:47 PM</span></td>
+
+	</tr>
+</tbody></table>
+
+
+</div>
+
+
+
+        	<div id="tunneittain2" class="stocks-weatherbox" style="display:none">
+
+<table border="0" cellspacing="0" cellpadding="0" width="280">
+	<tbody><tr>
+		<td colspan="2" height="2"></td>
+	</tr>
+<tr><td width="200"><span class="weathertitle"> &nbsp;Forecast - </span><span id="saa23" class="weathertitle">Tuesday</span></td><td width="60" align="right"> <span class="weathertitle" onclick="naytadetails2();;" onmouseover="this.style.cursor=&#39;pointer&#39;" title="Close detailed forecast"><font color="#ec008c">Close</font></span> &nbsp; &nbsp;</td></tr>
+
+</tbody></table>
+
+<span class="stocks-weather"> </span>
+<table background="" align="center" cellpadding="2" width="280" border="0" cellspacing="0">
+	<tbody><tr>
+		<td colspan="3" height="5"></td>
+	</tr>
+	<tr>
+		<td align="center" style="border-right-style: solid; border-right-color: #898989; border-right-width: 1px;" valign="top" width="84" class="stocks-weather_content">
+		<!--day1 date-->
+		<span id="ennuste26" class="weathertitlepieni">6am</span><br>
+		<!--day1 image-->
+		<span id="ennuste32"><img src="./Cornell CS Prospective Grad Student Visit Day 2010_files/ennuste_26.png" name="saakuva"></span><br>
+		<!--day1 hi-->
+		<span id="ennuste38">6°F</span><br>
+		<!--day1 low-->
+		<span id="ennuste44">Feels like -5°F</span>
+		</td>
+		<td valign="top" style="border-right-style: solid; border-right-color: #898989; border-right-width: 1px;" align="center" width="84" class="stocks-weather_content">
+		<!--day1 date-->
+		<span id="ennuste27" class="weathertitlepieni">8am</span><br>
+		<!--day1 image-->
+		<span id="ennuste33"><img src="./Cornell CS Prospective Grad Student Visit Day 2010_files/ennuste_26.png" name="saakuva"></span><br>
+		<!--day1 hi-->
+		<span id="ennuste39">6°F</span><br>
+		<!--day1 low-->
+		<span id="ennuste45">Feels like -6°F</span>
+		</td>
+		<td valign="top" align="center" width="83" class="stocks-weather_content">
+		<!--day1 date-->
+		<span id="ennuste28" class="weathertitlepieni">10am</span><br>
+		<!--day1 image-->
+		<span id="ennuste34"><img src="./Cornell CS Prospective Grad Student Visit Day 2010_files/ennuste_28.png" name="saakuva"></span><br>
+		<!--day1 hi-->
+		<span id="ennuste40">10°F</span><br>
+		<!--day1 low-->
+		<span id="ennuste46">Feels like -3°F</span>
+		</td>
+	</tr>
+
+
+	<tr>
+		<td colspan="3" height="3"><img src="./Cornell CS Prospective Grad Student Visit Day 2010_files/spacer.gif" height="4"></td>
+	</tr>
+	<tr>
+		<td align="center" style="border-right-style: solid; border-right-color: #898989; border-right-width: 1px;" valign="top" width="84" class="stocks-weather_content">
+		<!--day1 date-->
+		<span id="ennuste29" class="weathertitlepieni">12pm</span><br>
+		<!--day1 image-->
+		<span id="ennuste35"><img src="./Cornell CS Prospective Grad Student Visit Day 2010_files/ennuste_30.png" name="saakuva"></span><br>
+		<!--day1 hi-->
+		<span id="ennuste41">14°F</span><br>
+		<!--day1 low-->
+		<span id="ennuste47">Feels like 1°F</span>
+		</td>
+		<td valign="top" style="border-right-style: solid; border-right-color: #898989; border-right-width: 1px;" align="center" width="84" class="stocks-weather_content">
+		<!--day1 date-->
+		<span id="ennuste30" class="weathertitlepieni">2pm</span><br>
+		<!--day1 image-->
+		<span id="ennuste36"><img src="./Cornell CS Prospective Grad Student Visit Day 2010_files/ennuste_30.png" name="saakuva"></span><br>
+		<!--day1 hi-->
+		<span id="ennuste42">17°F</span><br>
+		<!--day1 low-->
+		<span id="ennuste48">Feels like 5°F</span>
+		</td>
+		<td valign="top" align="center" width="83" class="stocks-weather_content">
+		<!--day1 date-->
+		<span id="ennuste31" class="weathertitlepieni">4pm</span><br>
+		<!--day1 image-->
+		<span id="ennuste37"><img src="./Cornell CS Prospective Grad Student Visit Day 2010_files/ennuste_30.png" name="saakuva"></span><br>
+		<!--day1 hi-->
+		<span id="ennuste43">17°F</span><br>
+		<!--day1 low-->
+		<span id="ennuste49">Feels like 5°F</span>
+		</td>
+			</tr><tr>
+		<td colspan="3" height="3"><img src="./Cornell CS Prospective Grad Student Visit Day 2010_files/spacer.gif" height="2"></td>
+	</tr>
+	
+		<tr>
+		<td class="stocks-weather_content" colspan="3">&nbsp;Sunrise: <span id="saa25">6:53 AM</span> &nbsp; &nbsp; Sunset: <span id="saa27">5:47 PM</span></td>
+
+	</tr>
+</tbody></table>
+
+
+</div>
+
+
+
+        	<div id="tunneittain3" class="stocks-weatherbox" style="display:none">
+
+<table border="0" cellspacing="0" cellpadding="0" width="280">
+	<tbody><tr>
+		<td colspan="2" height="2"></td>
+	</tr>
+<tr><td width="200"><span class="weathertitle"> &nbsp;Forecast - </span><span id="saa24" class="weathertitle">Wednesday</span></td><td width="70" align="right"> <span class="weathertitle" onclick="naytadetails3();;" onmouseover="this.style.cursor=&#39;pointer&#39;" title="Close detailed forecast"><font color="#ec008c">Close</font> &nbsp; &nbsp;</span></td></tr>
+
+</tbody></table>
+
+<span class="stocks-weather"> </span>
+<table background="" align="center" cellpadding="2" width="280" border="0" cellspacing="0">
+	<tbody><tr>
+		<td colspan="3" height="5"></td>
+	</tr>
+	<tr>
+		<td align="center" style="border-right-style: solid; border-right-color: #898989; border-right-width: 1px;" valign="top" width="84" class="stocks-weather_content">
+		<!--day1 date-->
+		<span id="ennuste50" class="weathertitlepieni">6am</span><br>
+		<!--day1 image-->
+		<span id="ennuste56"><img src="./Cornell CS Prospective Grad Student Visit Day 2010_files/ennuste_29.png" name="saakuva"></span><br>
+		<!--day1 hi-->
+		<span id="ennuste62">2°F</span><br>
+		<!--day1 low-->
+		<span id="ennuste68">Feels like -4°F</span>
+		</td>
+		<td valign="top" style="border-right-style: solid; border-right-color: #898989; border-right-width: 1px;" align="center" width="84" class="stocks-weather_content">
+		<!--day1 date-->
+		<span id="ennuste51" class="weathertitlepieni">9am</span><br>
+		<!--day1 image-->
+		<span id="ennuste57"><img src="./Cornell CS Prospective Grad Student Visit Day 2010_files/ennuste_30.png" name="saakuva"></span><br>
+		<!--day1 hi-->
+		<span id="ennuste63">12°F</span><br>
+		<!--day1 low-->
+		<span id="ennuste69">Feels like 7°F</span>
+		</td>
+		<td valign="top" align="center" width="83" class="stocks-weather_content">
+		<!--day1 date-->
+		<span id="ennuste52" class="weathertitlepieni">12pm</span><br>
+		<!--day1 image-->
+		<span id="ennuste58"><img src="./Cornell CS Prospective Grad Student Visit Day 2010_files/ennuste_34.png" name="saakuva"></span><br>
+		<!--day1 hi-->
+		<span id="ennuste64">24°F</span><br>
+		<!--day1 low-->
+		<span id="ennuste70">Feels like 20°F</span>
+		</td>
+	</tr>
+
+
+	<tr>
+		<td colspan="3" height="3"><img src="./Cornell CS Prospective Grad Student Visit Day 2010_files/spacer.gif" height="4"></td>
+	</tr>
+	<tr>
+		<td align="center" style="border-right-style: solid; border-right-color: #898989; border-right-width: 1px;" valign="top" width="84" class="stocks-weather_content">
+		<!--day1 date-->
+		<span id="ennuste53" class="weathertitlepieni">3pm</span><br>
+		<!--day1 image-->
+		<span id="ennuste59"><img src="./Cornell CS Prospective Grad Student Visit Day 2010_files/ennuste_34.png" name="saakuva"></span><br>
+		<!--day1 hi-->
+		<span id="ennuste65">29°F</span><br>
+		<!--day1 low-->
+		<span id="ennuste71">Feels like 29°F</span>
+		</td>
+		<td valign="top" style="border-right-style: solid; border-right-color: #898989; border-right-width: 1px;" align="center" width="84" class="stocks-weather_content">
+		<!--day1 date-->
+		<span id="ennuste54" class="weathertitlepieni">6pm</span><br>
+		<!--day1 image-->
+		<span id="ennuste60"><img src="./Cornell CS Prospective Grad Student Visit Day 2010_files/ennuste_31.png" name="saakuva"></span><br>
+		<!--day1 hi-->
+		<span id="ennuste66">22°F</span><br>
+		<!--day1 low-->
+		<span id="ennuste72">Feels like 18°F</span>
+		</td>
+		<td valign="top" align="center" width="83" class="stocks-weather_content">
+		<!--day1 date-->
+		<span id="ennuste55" class="weathertitlepieni">9pm</span><br>
+		<!--day1 image-->
+		<span id="ennuste61"><img src="./Cornell CS Prospective Grad Student Visit Day 2010_files/ennuste_na.png" name="saakuva"></span><br>
+		<!--day1 hi-->
+		<span id="ennuste67">&nbsp;</span><br>
+		<!--day1 low-->
+		<span id="ennuste73">&nbsp;</span>
+		</td>
+
+	</tr>
+		<tr>
+		<td class="stocks-weather_content" colspan="3">&nbsp;Sunrise: <span id="saa26">6:51 AM</span> &nbsp; &nbsp; Sunset: <span id="saa28">5:48 PM</span><br>&nbsp;Forecast available up to 48 hours of current time.</td>
+
+	</tr>
+</tbody></table>
+
+
+</div>
+
+
+
+
+<script type="text/javascript" async="" src="./Cornell CS Prospective Grad Student Visit Day 2010_files/ga.js"></script><script language="Javascript">
+var xmlDoc = null ;
+var ennustexml = null ;
+
+var kumpiteksti = '' ;
+
+function naytadetails1()
+{
+if (kumpiteksti == ''){
+kumpiteksti = 'details';
+weather.style.display = "none";
+tunneittain1.style.display = "block";
+}else{
+kumpiteksti = '';
+weather.style.display = "block";
+tunneittain1.style.display = "none";
+}
+
+
+}
+
+function naytadetails2()
+{
+if (kumpiteksti == ''){
+kumpiteksti = 'details';
+weather.style.display = "none";
+tunneittain2.style.display = "block";
+}else{
+kumpiteksti = '';
+weather.style.display = "block";
+tunneittain2.style.display = "none";
+}
+
+
+}
+
+function naytadetails3()
+{
+if (kumpiteksti == ''){
+kumpiteksti = 'details';
+weather.style.display = "none";
+tunneittain3.style.display = "block";
+}else{
+kumpiteksti = '';
+weather.style.display = "block";
+tunneittain3.style.display = "none";
+}
+
+
+}
+
+
+
+
+if (typeof window.ActiveXObject != 'undefined' ) {
+	xmlDoc = new ActiveXObject("Microsoft.XMLHTTP");
+	xmlDoc.onreadystatechange = naytasivu ;
+} else {
+	xmlDoc = new XMLHttpRequest();
+	xmlDoc.onload = naytasivu ;
+}
+xmlDoc.open( "GET", "Tiedot.aspx?paikka=14850&merkki=0&estacache=" +Math.random(), true );
+xmlDoc.send( null );
+
+
+if (typeof window.ActiveXObject != 'undefined' ) {
+	ennustexml = new ActiveXObject("Microsoft.XMLHTTP");
+	ennustexml.onreadystatechange = naytaennuste ;
+} else {
+	ennustexml = new XMLHttpRequest();
+	ennustexml.onload = naytaennuste ;
+}
+ennustexml.open( "GET", "ennuste.asp?paikka=14850&merkki=0&estacache=" +Math.random(), true );
+ennustexml.send( null );
+
+
+
+
+
+function naytasivu(){
+
+if ( xmlDoc.readyState != 4 ) return ;
+//alert(xmlDoc.responseText);
+	var saatilalista=xmlDoc.responseText.split("|");
+
+
+
+	// 0-7 = tuulennopeusmerkki, lampotila, saatila, saakuva, humidity, tuulisuunta, tuulinopeus, tanaanylin
+	// 8-14 = tanaanalin, ennuste1ylin, ennuste1alin, ennuste1paiva, ennuste1kuva, ennuste2ylin, ennuste2alin
+	// 15-22 = ennuste2paiva, ennuste2kuva, ennuste3ylin, ennuste3alin, ennuste3paiva, ennuste3kuva, lampotilamerkki, paikka
+
+	var x=0; 
+
+
+
+if (saatilalista[4].length < 1 ) {
+document.getElementById('locteksti').innerHTML = '';
+document.getElementById('saa22').innerHTML = saatilalista[22];
+}else{
+document.getElementById('locteksti').innerHTML = "Location:"
+alaosa.style.display = "block";
+
+		for (x=0; x<29; x++ ) 
+		{ 
+		var minne = 'saa' + x;
+
+		if (x == 3 || x == 12 || x == 16 || x == 20) {
+		         var now = new Date();
+
+		         var arVersion = navigator.appVersion.split("MSIE")
+var version = parseFloat(arVersion[1])
+
+if ((version >= 5.5) && (document.body.filters)) 
+{
+
+document.getElementById(minne).innerHTML = '<img style=\"filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=\'true\',src=\'weathericons/' + saatilalista[x] + '.png\')\"  src=\"spacer.gif\">';
+} else {
+
+		document.getElementById(minne).innerHTML = '<IMG SRC=weathericons/' + saatilalista[x] + '.png name=saakuva>';
+}
+
+
+		}else{
+		//alert(saatilalista[x]);
+		document.getElementById(minne).innerHTML = saatilalista[x];
+
+		//alert('here');
+		}
+
+		}
+}
+}
+
+
+function naytaennuste(){
+
+if ( ennustexml.readyState != 4 ) return ;
+//alert(ennustexml.responseText);
+	var ennustelista=ennustexml.responseText.split("|");
+
+
+
+	// 0-7 = tuulennopeusmerkki, lampotila, saatila, saakuva, humidity, tuulisuunta, tuulinopeus, tanaanylin
+	// 8-14 = tanaanalin, ennuste1ylin, ennuste1alin, ennuste1paiva, ennuste1kuva, ennuste2ylin, ennuste2alin
+	// 15-22 = ennuste2paiva, ennuste2kuva, ennuste3ylin, ennuste3alin, ennuste3paiva, ennuste3kuva, lampotilamerkki, paikka
+
+	var j=0; 
+
+		for (j=0; j<74; j++ ) 
+		{ 
+		var minne = 'ennuste' + j;
+
+		if (j == 6 || j == 7 || j == 8 || j == 9 || j == 10 || j == 11 || j == 32 || j == 33 || j == 34 || j == 35 || j == 36 || j == 37 || j == 56 || j == 57 || j == 58 || j == 59 || j == 60 || j == 61) {
+		         var now = new Date();
+
+		         var arVersion = navigator.appVersion.split("MSIE")
+var version = parseFloat(arVersion[1])
+
+if ((version >= 5.5) && (document.body.filters)) 
+{
+
+document.getElementById(minne).innerHTML = '<img style=\"filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=\'true\',src=\'weathericons/' + ennustelista[j] + '.png\')\"  src=\"spacer.gif\">';
+} else {
+
+		document.getElementById(minne).innerHTML = '<IMG SRC=weathericons/' + ennustelista[j] + '.png name=saakuva>';
+}
+
+
+		}else{
+		//alert(ennustelista[x]);
+		//alert(minne);
+		document.getElementById(minne).innerHTML = ennustelista[j];
+
+		//alert('here');
+		}
+
+		
+}
+}
+
+// Saapaivitys
+
+var viive = 300000; //5 min
+var Naytto = 0;
+var AikaaJaljella = 300;
+var Paivittaako = 0;
+
+Aloita();
+
+function Aloita()
+{
+VaihdaViive(300000);
+Paivitys();        
+}
+function VaihdaAika()
+{
+
+        AikaaJaljella--;
+        if (AikaaJaljella < 0)
+        {
+        	LataaTiedot();
+            return;
+        }
+       }
+function Paivitys()
+{
+        Naytto = setInterval('VaihdaAika()', 1000);
+        AikaaJaljella = viive/1000;
+        Paivittaako = 1;
+}
+function LopetaPaivitys()
+{
+        clearInterval(Naytto);
+        Naytto = 0;
+        Paivittaako = 0;
+}
+function LataaTiedot()
+{
+
+if (typeof window.ActiveXObject != 'undefined' ) {
+	xmlDoc = new ActiveXObject("Microsoft.XMLHTTP");
+	xmlDoc.onreadystatechange = naytasivu ;
+} else {
+	xmlDoc = new XMLHttpRequest();
+	xmlDoc.onload = naytasivu ;
+}
+xmlDoc.open( "GET", "tiedot.aspx?paikka=14850&merkki=0&estacache=" +Math.random(), true );
+xmlDoc.send( null );
+
+//alert('taatta');
+       var now = new Date();
+        AikaaJaljella = viive/1000;
+}
+function VaihdaViive(uusiviive)
+{
+        if (Paivittaako == 1)  {
+                LopetaPaivitys();
+                viive = uusiviive;
+                Paivitys();
+        } else {
+                viive = uusiviive;
+        }
+}
+
+
+// Ennustepaivitys
+
+var ennusteviive = 3600000; //20 min
+var ennusteNaytto = 0;
+var ennusteAikaaJaljella = 3600;
+var ennustePaivittaako = 0;
+
+ennusteAloita();
+
+function ennusteAloita()
+{
+ennusteVaihdaViive(3600000);
+ennustePaivitys();        
+}
+function ennusteVaihdaAika()
+{
+
+        ennusteAikaaJaljella--;
+        if (ennusteAikaaJaljella < 0)
+        {
+        	ennusteLataaTiedot();
+            return;
+        }
+       }
+function ennustePaivitys()
+{
+        ennusteNaytto = setInterval('ennusteVaihdaAika()', 1000);
+        ennusteAikaaJaljella = ennusteviive/1000;
+        ennustePaivittaako = 1;
+}
+function ennusteLopetaPaivitys()
+{
+        clearInterval(ennusteNaytto);
+        ennusteNaytto = 0;
+        ennustePaivittaako = 0;
+}
+function ennusteLataaTiedot()
+{
+
+if (typeof window.ActiveXObject != 'undefined' ) {
+	ennustexml = new ActiveXObject("Microsoft.XMLHTTP");
+	ennustexml.onreadystatechange = naytaennuste ;
+} else {
+	ennustexml = new XMLHttpRequest();
+	ennustexml.onload = naytaennuste ;
+}
+ennustexml.open( "GET", "ennuste.asp?paikka=14850&merkki=0&estacache=" +Math.random(), true );
+ennustexml.send( null );
+
+       var now = new Date();
+        ennusteAikaaJaljella = ennusteviive/1000;
+}
+function ennusteVaihdaViive(ennusteuusiviive)
+{
+        if (ennustePaivittaako == 1)  {
+                ennusteLopetaPaivitys();
+                ennusteviive = ennusteuusiviive;
+                ennustePaivitys();
+        } else {
+                ennusteviive = ennusteuusiviive;
+        }
+}
+
+
+
+// mainospaivitys
+
+var mainosviive = 180000; //5 min
+var mainosNaytto = 0;
+var mainosAikaaJaljella = 180;
+var mainosPaivittaako = 0;
+var mainostieto = '';
+
+mainosAloita();
+
+function mainosAloita()
+{
+mainosVaihdaViive(180000);
+mainosPaivitys();        
+}
+function mainosVaihdaAika()
+{
+
+        mainosAikaaJaljella--;
+        if (mainosAikaaJaljella < 0)
+        {
+        	mainosLataaTiedot();
+            return;
+        }
+       }
+function mainosPaivitys()
+{
+        mainosNaytto = setInterval('mainosVaihdaAika()', 1000);
+        mainosAikaaJaljella = mainosviive/1000;
+        mainosPaivittaako = 1;
+}
+function mainosLopetaPaivitys()
+{
+        clearInterval(mainosNaytto);
+        mainosNaytto = 0;
+        mainosPaivittaako = 0;
+}
+function mainosLataaTiedot()
+{
+
+		if (mainostieto == ''){
+		mainos.innerHTML = "Click date title for detailed forecast.";
+		mainostieto = 'seuraavakssaa';
+		}else{
+		mainos.innerHTML = 'Data provided by <a href=http://www.weather.com/?prod=xoap&par=1000144085 target=_blank>Weather.com</a>';
+		mainostieto = '';
+		}
+       var now = new Date();
+        mainosAikaaJaljella = mainosviive/1000;
+}
+
+function mainosVaihdaViive(mainosuusiviive)
+{
+        if (mainosPaivittaako == 1)  {
+                mainosLopetaPaivitys();
+                mainosviive = mainosuusiviive;
+                mainosPaivitys();
+        } else {
+                mainosviive = mainosuusiviive;
+        }
+}
+
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2002583-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script> 
+ </body></html>

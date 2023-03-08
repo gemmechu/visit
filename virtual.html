@@ -1,0 +1,292 @@
+<RAOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<!--
+  This page was last redesigned by Ethan Cecchetti for Visit Day 2017.
+  If you have any maintenance questions, please contact him.
+-->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Cornell Computer Science &ndash; Admitted Grad Student Virtual Visit Day 2018</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Exo%202:600%7CLato:400,400i,700,700i,900%7CSource+Sans+Pro:400,600,700" rel="stylesheet">
+  <script src="jquery-2.1.4.min.js" type="text/javascript"></script>
+  <script src="visit-day.js" type="text/javascript"></script>
+</head>
+
+<body onLoad="initialize()">
+
+<header>
+  <div id="header_wrapper">
+    <div id="header_div">
+      <table id="header_table"><tr>
+        <td id="header_img_td">
+          <a id="header_img" href="http://www.cs.cornell.edu/"></a>
+        </td>
+        <td id="header_text_td">
+          <h1>Admitted Grad Student Virtual Visit Day 2018</h1>
+          <h2>March 26</h2>
+        </td>
+      </tr></table>
+    </div>
+
+    <div id="nav_bar_wrapper"><div id="nav_bar">
+      <table id="nav_bar_table" class="js-off"><tr>
+          <td><div class="nav_bar_cell">
+              <div class="section">Cornell</div>
+              <ul class="link_list">
+                <li><a class="link" href="https://www.cornell.edu/">Cornell University</a></li>
+                <li><a class="link" href="https://cis.cornell.edu/">Cornell CIS</a></li>
+                <li><a class="link" href="https://www.cs.cornell.edu/">Cornell Computer Science</a></li>
+                <li><a class="link" href="https://tech.cornell.edu/">Cornell Tech (NYC)</a></li>
+              </ul>
+          </div></td>
+
+          <td><div class="nav_bar_cell">
+              <div class="section">Campus</div>
+              <ul class="link_list">
+                <li><div class="subsection">Ithaca</div></li>
+                <li><a class="link" href="https://www.cornell.edu/maps/">Campus Maps</a></li>
+                <li><a class="link" href="https://blogs.cornell.edu/gateshall/">Bill and Melinda <span class="nowrap">Gates Hall</span></a></li>
+                <li><a class="link" href="http://solarnooncam.coecis.cornell.edu/view/viewer_index.shtml">Gates Hall Roof Webcam</a></li>
+                <li><a class="link" href="http://www.cornell.edu/visiting/ithaca/live_views.cfm">Ho Plaza Webcam</a></li>
+                <li class="divider"></li>
+                <li><div class="subsection">New York City</div></li>
+                <li><a class="link" href="https://tech.cornell.edu/campus">Campus Map and Buildings</a></li>
+                <li><a class="link" href="https://tech.cornell.edu/opening">360&deg; Campus Tour</a></li>
+                <li><a class="link" href="•	https://www.youtube.com/watch?v=GuM8vTq0jd4">360&deg; Glorious Views of Cornell</a></li>
+                <li><a class="link" href="https://tech.cornell.edu/earthcam-video-player">Construction Webcam</a></li>
+              </ul>
+          </div></td>
+
+          <td><div class="nav_bar_cell">
+              <div class="section">Travel</div>
+              <ul class="link_list">
+                <li><a class="link" href="https://ipp.cornell.edu/content/campus-campus-bus-service/">Campus to Campus Bus <span class="nowrap">(Ithaca &#x27f7; NYC)</span></a></li>
+                <li class="divider"></li>
+                <li><div class="subsection">Ithaca</div></li>
+                <li><a class="link" href="http://www.flyithaca.com/">Ithaca Airport (ITH)</a></li>
+                <li><a class="link" href="http://www.syrairport.org/">Syracuse Airport (SYR)</a></li>
+                <li><a class="link" href="https://www.google.com/maps?q=Hilton+Garden+Inn+Ithaca">Driving Directions</a></li>
+                <li><a class="link" href="http://hiltongardeninn3.hilton.com/en/hotels/new-york/hilton-garden-inn-ithaca-ITHIGGI/index.html">Hilton Garden Inn</a></li>
+                <!--
+                <li><a class="link" href="http://www.statlerhotel.cornell.edu/">Statler Hotel</a></li>
+                <li><a class="link" href="http://hiltongardeninn3.hilton.com/en/hotels/new-york/hilton-garden-inn-ithaca-ITHIGGI/index.html">Hilton Garden Inn</a></li>
+                -->
+                <li class="divider"></li>
+                <li><div class="subsection">New York City</div></li>
+                <li><a class="link" href="https://www.panynj.gov/airports/jfk.html">Kennedy Airport (JFK)</a></li>
+                <li><a class="link" href="https://www.panynj.gov/airports/newark-liberty.html">Newark Airport (EWR)</a></li>
+                <li><a class="link" href="https://www.amtrak.com/servlet/ContentServer?pagename=am/am2Station/Station_Page&code=NYP">Penn Station (Amtrak)</a></li>
+                <li><a class="link" href="https://www.panynj.gov/bus-terminals/port-authority-bus-terminal.html">Port Authority Bus Terminal</a></li>
+                <li><a class="link" href="https://www.hotelhaydennyc.com/">Hotel Hayden</a></li>
+                <li><a class="link" href="https://www.hotelhenrinyc.com/">Hotel Henri</a></li>
+              </ul>
+          </div></td>
+
+          <td><div class="nav_bar_cell">
+              <div class="section">Local</div>
+              <ul class="link_list">
+                <li><div class="subsection">Ithaca</div></li>
+                <li><a class="link" href="https://www.tcatbus.com/">TCAT (Local Buses)</a></li>
+                <li><a class="link" href="http://www.visitithaca.com/">Ithaca Tourism</a></li>
+                <li><a class="link" href="https://www.wunderground.com/q/14853">Ithaca Weather</a></li>
+                <li class="divider"></li>
+                <li><div class="subsection">New York City</div></li>
+                <li><a class="link" href="http://web.mta.info/maps/submap.html">Subway Map</a></li>
+                <li><a class="link" href="https://www.nytimes.com/video/new-york-city-neighborhoods-block-by-block">New York Neighborhoods</a></li>
+                <li><a class="link" href="https://www.wunderground.com/us/ny/new-york/">New York Weather</a></li>
+              </ul>
+          </div></td>
+
+          <td><div id="social_media_div">
+              <div class="section">
+                <a id="youtube" class="social_media_link" href="https://www.youtube.com/channel/UC30gHDEkx8V-9aIoDHzz-zA"></a>
+                <a id="facebook" class="social_media_link" href="https://www.facebook.com/cornellcis"></a>
+                <a id="twitter" class="social_media_link" href="http://www.twitter.com/CornellCIS"></a>
+              </div>
+          </div></td>
+      </tr></table>
+    </div></div>
+
+    <div id="slideshow_div">
+      <ul id="slideshow_list">
+        <li id="gates_hall" class="slideshow_image">
+          <div class="slideshow_bottomer">
+            <div class="slideshow_centerer">
+              <span class="slideshow_caption">
+                Bill and Melinda Gates Hall &ndash; Home to Cornell's Computer Science Department
+              </span>
+            </div>
+          </div>
+        </li>
+        <li id="gorge_trail" class="slideshow_image">
+          <div class="slideshow_bottomer">
+            <div class="slideshow_centerer">
+              <span class="slideshow_caption">
+                Cascadilla Gorge Trail &ndash; One of the many picturesque locations in and around Ithaca
+              </span>
+            </div>
+          </div>
+        </li>
+        <li id="tata_innovation_center" class="slideshow_image">
+          <div class="slideshow_bottomer">
+            <div class="slideshow_centerer">
+              <span class="slideshow_caption">
+                Tata Innovation Center &ndash; Brings together students, entrepreneurs, and tech companies
+              </span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="slideshow_bottomer">
+        <div class="slideshow_centerer">
+          <div id="slideshow_selector_div">
+            <div class="slideshow_selector_button selected" onClick="setSlideshow($(this))"></div>
+            <div class="slideshow_selector_button" onClick="setSlideshow($(this))"></div>
+            <div class="slideshow_selector_button" onClick="setSlideshow($(this))"></div>
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div id="info_div">
+  <div id="welcome_msg_div">
+    <p>
+    To all students admitted to the Cornell Computer Science PhD Program,
+    </p>
+
+    <p>
+    On behalf of Cornell and the CS graduate student community, congratulations! Cornell is an excellent school, home to many enthusiastic researchers with diverse interests.
+    We are looking forward to providing assistance as you consider your options for graduate studies.
+    </p>
+
+    <p>
+    We're sorry that you could not make it to our visit day, but we put together the most important points of the program for a virtual visit day.
+    We also encourage you to reach out to faculty to set up meetings with them. You can see a list of all CS faculty on both campuses on
+    <a href="https://www.cs.cornell.edu/people/faculty">the department faculty page</a>.
+    </p>
+
+    <p>
+    If you have any questions, please do not hesitate to contact us at
+    <a class="email" onMouseOver="setEmail($(this), 'phdvisitday', 'list.cs.cornell.edu')">phdvisitday at list.cs.cornell.edu</a>.
+    </p>
+
+    <p>
+    To receive an invite to our virtual visit day, please RSVP here: <a href="https://goo.gl/forms/Be9vzxVv2ZFZHpfs1">https://goo.gl/forms/Be9vzxVv2ZFZHpfs1</a>.
+    </p>
+
+    <p>See you soon!</p>
+
+    <p>
+    Cheng, Claire, Dietrich, John, Jonathan, Julia, Shannon (Ithaca), Alane, and Eugene (New York)<br />
+    (The Visit Day Czars)
+    </p>
+  </div>
+
+  <div id="schedule_div">
+    <h3>Virtual Visit Day Schedule</h3>
+
+    <div class="date_row">Monday, March 26, 2018</div>
+    <div id="day0_sched" class="schedule">
+    <table class="info_table">
+      <tr>
+        <td class="time">8:45am &ndash; 9:30am EDT</td>
+        <td>
+          Welcome from the Chair, Introduction to the Program 
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">9:30am &ndash; 11:15am EDT</td>
+        <td>
+          Informal Information Session with Grad Students
+        </td>
+      </tr>
+    </table>
+    </div>
+  </div>
+
+
+  <div id="czar_info_div">
+    <h3>Visit Day Student Organizers</h3>
+    <table class="info_table">
+      <tr>
+        <th></th>
+        <th>Name</th>
+        <th class="campus">Campus</th>
+        <th>Contact <span class="email">(@cs.cornell.edu)</span></th>
+      </tr>
+
+      <tr>
+        <td><img class="portrait" title="Cheng Perng Phoo" alt="Cheng Perng Phoo" src="images/cheng.jpg"/></td>
+        <td>Cheng Perng Phoo</td>
+        <td class="campus">Ithaca</td>
+        <td class="email">cpphoo</td>
+      </tr>
+
+      <tr>
+        <td><img class="portrait" title="Claire Liang" alt="Claire Liang" src="images/claire.jpg"/></td>
+        <td>Claire Liang</td>
+        <td class="campus">Ithaca</td>
+        <td class="email">cliang</td>
+      </tr>
+
+      <tr>
+        <td><img class="portrait" title="Dietrich Geisler" alt="Dietrich Geisler" src="images/dietrich.jpg"/></td>
+        <td>Dietrich Geisler</td>
+        <td class="campus">Ithaca</td>
+        <td class="email">dgeisler</td>
+      </tr>
+
+      <tr>
+        <td><img class="portrait" title="John Ryan" alt="John Ryan" src="images/john.jpg"/></td>
+        <td>John Ryan</td>
+        <td class="campus">Ithaca</td>
+        <td class="email">johnryan</td>
+      </tr>
+
+      <tr>
+        <td><img class="portrait" title="Jonathan Chang" alt="Jonathan Chang" src="images/jonathan.jpg"/></td>
+        <td>Jonathan Chang</td>
+        <td class="campus">Ithaca</td>
+        <td class="email">jpchang</td>
+      </tr>
+
+      <tr>
+        <td><img class="portrait" title="Julia Proft" alt="Julia Proft" src="images/julia.jpg"/></td>
+        <td>Julia Proft</td>
+        <td class="campus">Ithaca</td>
+        <td class="email">jproft</td>
+      </tr>
+
+      <tr>
+        <td><img class="portrait" title="Shannon Joyner" alt="Shannon Joyner" src="images/shannon.jpg"/></td>
+        <td>Shannon Joyner</td>
+        <td class="campus">Ithaca</td>
+        <td class="email">shjoyner</td>
+      </tr>
+
+      <tr>
+        <td><img class="portrait" title="Alane Suhr" alt="Alane Suhr" src="images/alane.jpg"/></td>
+        <td>Alane Suhr</td>
+        <td class="campus">New York</td>
+        <td class="email">suhr</td>
+      </tr>
+
+      <tr>
+        <td><img class="portrait" title="Eugene Bagdasaryan" alt="Eugene Bagdasaryan" src="images/eugene.jpg"/></td>
+        <td>Eugene Bagdasaryan</td>
+        <td class="campus">New York</td>
+        <td class="email">eugene</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>

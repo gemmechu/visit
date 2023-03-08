@@ -1,0 +1,550 @@
+
+<!-- saved from url=(0403)http://www-open-opensocial.googleusercontent.com/gadgets/ifr?url=http%3A%2F%2Fwww.notkewl.com%2FmyWeather%2FmyWeather.xml&container=open&view=home&lang=all&country=ALL&debug=0&nocache=0&sanitize=0&up_paikka=14850&up_merkki=0&v=5fe8e9e200a40c7e&source=http%3A%2F%2Fwww.cs.cornell.edu%2Fprojects%2Fphdvisit%2F&parent=http%3A%2F%2Fwww.cs.cornell.edu%2Fprojects%2Fphdvisit%2F&libs=core%3Acore.io#st=%25st%25 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">body,td,div,span,p{font-family:arial,sans-serif;}a {color:#0000cc;}a:visited {color:#551a8b;}a:active {color:#ff0000;}body{margin: 0px;padding: 0px;background-color:white;}</style><script>window['__isgadget']=true;</script><script src="./Cornell CS Prospective Grad Student Visit Day 2010_files/core-core.io.js"></script><script>gadgets.rpctx=gadgets.rpctx||{};
+if(!gadgets.rpctx.wpm){gadgets.rpctx.wpm=function(){var c,f;
+var g;
+var i=false;
+var h=false;
+var d=false;
+function a(){var j=false;
+function k(l){if(l.data=="postmessage.test"){j=true;
+if(typeof l.origin==="undefined"){h=true
+}}}gadgets.util.attachBrowserEvent(window,"message",k,false);
+window.postMessage("postmessage.test","*");
+if(j){i=true
+}gadgets.util.removeBrowserEvent(window,"message",k,false)
+}function e(l){var m=gadgets.json.parse(l.data);
+if(d){if(!m||!m.f){return
+}var k=gadgets.rpc.getRelayUrl(m.f)||gadgets.util.getUrlParameters()["parent"];
+var j=gadgets.rpc.getOrigin(k);
+if(!h?l.origin!==j:l.domain!==/^.+:\/\/([^:]+).*/.exec(j)[1]){return
+}}c(m)
+}function b(l,j){var k=gadgets.rpc._parseSiblingId(l);
+if(k){return k.origin
+}if(l==".."){return j
+}else{return document.getElementById(l).src
+}}return{getCode:function(){return"wpm"
+},isParentVerifiable:function(){return true
+},init:function(j,k){c=j;
+f=k;
+a();
+if(!i){g=function(m,n,l){m.postMessage(n,l)
+}
+}else{g=function(m,n,l){window.setTimeout(function(){m.postMessage(n,l)
+},0)
+}
+}gadgets.util.attachBrowserEvent(window,"message",e,false);
+f("..",true);
+return true
+},setup:function(l,k,j){d=j;
+if(l===".."){if(d){gadgets.rpc._createRelayIframe(k)
+}else{gadgets.rpc.call(l,gadgets.rpc.ACK)
+}}return true
+},call:function(k,o,n){var m=gadgets.rpc._getTargetWin(k);
+var l=gadgets.rpc.getRelayUrl(k)||b(k,gadgets.util.getUrlParameters()["parent"]);
+var j=gadgets.rpc.getOrigin(l);
+if(j){g(m,gadgets.json.stringify(n),j)
+}else{gadgets.error("No relay set (used as window.postMessage targetOrigin), cannot send cross-domain message")
+}return true
+},relayOnload:function(k,j){f(k,true)
+}}
+}()
+};;
+;
+gadgets.rpctx=gadgets.rpctx||{};
+if(!gadgets.rpctx.frameElement){gadgets.rpctx.frameElement=function(){var e="__g2c_rpc";
+var b="__c2g_rpc";
+var d;
+var c;
+function a(g,k,j){try{if(k!==".."){var f=window.frameElement;
+if(typeof f[e]==="function"){if(typeof f[e][b]!=="function"){f[e][b]=function(l){d(gadgets.json.parse(l))
+}
+}f[e](gadgets.json.stringify(j));
+return true
+}}else{var i=document.getElementById(g);
+if(typeof i[e]==="function"&&typeof i[e][b]==="function"){i[e][b](gadgets.json.stringify(j));
+return true
+}}}catch(h){}return false
+}return{getCode:function(){return"fe"
+},isParentVerifiable:function(){return false
+},init:function(f,g){d=f;
+c=g;
+return true
+},setup:function(j,f){if(j!==".."){try{var i=document.getElementById(j);
+i[e]=function(k){d(gadgets.json.parse(k))
+}
+}catch(h){return false
+}}if(j===".."){c("..",true);
+var g=function(){window.setTimeout(function(){gadgets.rpc.call(j,gadgets.rpc.ACK)
+},500)
+};
+gadgets.util.registerOnLoadHandler(g)
+}return true
+},call:function(f,h,g){return a(f,h,g)
+}}
+}()
+};;
+;
+gadgets.rpctx=gadgets.rpctx||{};
+if(!gadgets.rpctx.nix){gadgets.rpctx.nix=function(){var c="GRPC____NIXVBS_wrapper";
+var d="GRPC____NIXVBS_get_wrapper";
+var f="GRPC____NIXVBS_handle_message";
+var b="GRPC____NIXVBS_create_channel";
+var a=10;
+var j=500;
+var i={};
+var h;
+var g=0;
+function e(){var l=i[".."];
+if(l){return
+}if(++g>a){gadgets.warn("Nix transport setup failed, falling back...");
+h("..",false);
+return
+}if(!l&&window.opener&&"GetAuthToken" in window.opener){l=window.opener;
+if(l.GetAuthToken()==gadgets.rpc.getAuthToken("..")){var k=gadgets.rpc.getAuthToken("..");
+l.CreateChannel(window[d]("..",k),k);
+i[".."]=l;
+window.opener=null;
+h("..",true);
+return
+}}window.setTimeout(function(){e()
+},j)
+}return{getCode:function(){return"nix"
+},isParentVerifiable:function(){return false
+},init:function(l,m){h=m;
+if(typeof window[d]!=="unknown"){window[f]=function(o){window.setTimeout(function(){l(gadgets.json.parse(o))
+},0)
+};
+window[b]=function(o,q,p){if(gadgets.rpc.getAuthToken(o)===p){i[o]=q;
+h(o,true)
+}};
+var k="Class "+c+"\n Private m_Intended\nPrivate m_Auth\nPublic Sub SetIntendedName(name)\n If isEmpty(m_Intended) Then\nm_Intended = name\nEnd If\nEnd Sub\nPublic Sub SetAuth(auth)\n If isEmpty(m_Auth) Then\nm_Auth = auth\nEnd If\nEnd Sub\nPublic Sub SendMessage(data)\n "+f+"(data)\nEnd Sub\nPublic Function GetAuthToken()\n GetAuthToken = m_Auth\nEnd Function\nPublic Sub CreateChannel(channel, auth)\n Call "+b+"(m_Intended, channel, auth)\nEnd Sub\nEnd Class\nFunction "+d+"(name, auth)\nDim wrap\nSet wrap = New "+c+"\nwrap.SetIntendedName name\nwrap.SetAuth auth\nSet "+d+" = wrap\nEnd Function";
+try{window.execScript(k,"vbscript")
+}catch(n){return false
+}}return true
+},setup:function(o,k){if(o===".."){e();
+return true
+}try{var m=document.getElementById(o);
+var n=window[d](o,k);
+m.contentWindow.opener=n
+}catch(l){return false
+}return true
+},call:function(k,n,m){try{if(i[k]){i[k].SendMessage(gadgets.json.stringify(m))
+}}catch(l){return false
+}return true
+}}
+}()
+};;
+;
+gadgets.rpctx=gadgets.rpctx||{};
+if(!gadgets.rpctx.rmr){gadgets.rpctx.rmr=function(){var g=500;
+var e=10;
+var h={};
+var b;
+var i;
+function k(p,n,o,m){var q=function(){document.body.appendChild(p);
+p.src="about:blank";
+if(m){p.onload=function(){l(m)
+}
+}p.src=n+"#"+o
+};
+if(document.body){q()
+}else{gadgets.util.registerOnLoadHandler(function(){q()
+})
+}}function c(o){if(typeof h[o]==="object"){return
+}var p=document.createElement("iframe");
+var m=p.style;
+m.position="absolute";
+m.top="0px";
+m.border="0";
+m.opacity="0";
+m.width="10px";
+m.height="1px";
+p.id="rmrtransport-"+o;
+p.name=p.id;
+var n=gadgets.rpc.getRelayUrl(o);
+if(!n){n=gadgets.rpc.getOrigin(gadgets.util.getUrlParameters()["parent"])+"/robots.txt"
+}h[o]={frame:p,receiveWindow:null,relayUri:n,searchCounter:0,width:10,waiting:true,queue:[],sendId:0,recvId:0};
+if(o!==".."){k(p,n,a(o))
+}d(o)
+}function d(o){var q=null;
+h[o].searchCounter++;
+try{var n=gadgets.rpc._getTargetWin(o);
+if(o===".."){q=n.frames["rmrtransport-"+gadgets.rpc.RPC_ID]
+}else{q=n.frames["rmrtransport-.."]
+}}catch(p){}var m=false;
+if(q){m=f(o,q)
+}if(!m){if(h[o].searchCounter>e){return
+}window.setTimeout(function(){d(o)
+},g)
+}}function j(n,p,t,s){var o=null;
+if(t!==".."){o=h[".."]
+}else{o=h[n]
+}if(o){if(p!==gadgets.rpc.ACK){o.queue.push(s)
+}if(o.waiting||(o.queue.length===0&&!(p===gadgets.rpc.ACK&&s&&s.ackAlone===true))){return true
+}if(o.queue.length>0){o.waiting=true
+}var m=o.relayUri+"#"+a(n);
+try{o.frame.contentWindow.location=m;
+var q=o.width==10?20:10;
+o.frame.style.width=q+"px";
+o.width=q
+}catch(r){return false
+}}return true
+}function a(n){var o=h[n];
+var m={id:o.sendId};
+if(o){m.d=Array.prototype.slice.call(o.queue,0);
+m.d.push({s:gadgets.rpc.ACK,id:o.recvId})
+}return gadgets.json.stringify(m)
+}function l(x){var u=h[x];
+var q=u.receiveWindow.location.hash.substring(1);
+var y=gadgets.json.parse(decodeURIComponent(q))||{};
+var n=y.d||[];
+var o=false;
+var t=false;
+var v=0;
+var m=(u.recvId-y.id);
+for(var p=0;
+p<n.length;
+++p){var s=n[p];
+if(s.s===gadgets.rpc.ACK){i(x,true);
+if(u.waiting){t=true
+}u.waiting=false;
+var r=Math.max(0,s.id-u.sendId);
+u.queue.splice(0,r);
+u.sendId=Math.max(u.sendId,s.id||0);
+continue
+}o=true;
+if(++v<=m){continue
+}++u.recvId;
+b(s)
+}if(o||(t&&u.queue.length>0)){var w=(x==="..")?gadgets.rpc.RPC_ID:"..";
+j(x,gadgets.rpc.ACK,w,{ackAlone:o})
+}}function f(p,s){var o=h[p];
+try{var n=false;
+n="document" in s;
+if(!n){return false
+}n=typeof s.document=="object";
+if(!n){return false
+}var r=s.location.href;
+if(r==="about:blank"){return false
+}}catch(m){return false
+}o.receiveWindow=s;
+function q(){l(p)
+}if(typeof s.attachEvent==="undefined"){s.onresize=q
+}else{s.attachEvent("onresize",q)
+}if(p===".."){k(o.frame,o.relayUri,a(p),p)
+}else{l(p)
+}return true
+}return{getCode:function(){return"rmr"
+},isParentVerifiable:function(){return true
+},init:function(m,n){b=m;
+i=n;
+return true
+},setup:function(o,m){try{c(o)
+}catch(n){gadgets.warn("Caught exception setting up RMR: "+n);
+return false
+}return true
+},call:function(m,o,n){return j(m,n.s,o,n)
+}}
+}()
+};;
+;
+gadgets.rpctx=gadgets.rpctx||{};
+if(!gadgets.rpctx.ifpc){gadgets.rpctx.ifpc=function(){var e=[];
+var d=0;
+var c;
+function b(h){var f=[];
+for(var k=0,g=h.length;
+k<g;
+++k){f.push(encodeURIComponent(gadgets.json.stringify(h[k])))
+}return f.join("&")
+}function a(j){var g;
+for(var f=e.length-1;
+f>=0;
+--f){var k=e[f];
+try{if(k&&(k.recyclable||k.readyState==="complete")){k.parentNode.removeChild(k);
+if(window.ActiveXObject){e[f]=k=null;
+e.splice(f,1)
+}else{k.recyclable=false;
+g=k;
+break
+}}}catch(h){}}if(!g){g=document.createElement("iframe");
+g.style.border=g.style.width=g.style.height="0px";
+g.style.visibility="hidden";
+g.style.position="absolute";
+g.onload=function(){this.recyclable=true
+};
+e.push(g)
+}g.src=j;
+window.setTimeout(function(){document.body.appendChild(g)
+},0)
+}return{getCode:function(){return"ifpc"
+},isParentVerifiable:function(){return true
+},init:function(f,g){c=g;
+c("..",true);
+return true
+},setup:function(g,f){c(g,true);
+return true
+},call:function(f,k,i){var j=gadgets.rpc.getRelayUrl(f);
+++d;
+if(!j){gadgets.warn("No relay file assigned for IFPC");
+return false
+}var h=null;
+if(i.l){var g=i.a;
+h=[j,"#",b([k,d,1,0,b([k,i.s,"","",k].concat(g))])].join("")
+}else{h=[j,"#",f,"&",k,"@",d,"&1&0&",encodeURIComponent(gadgets.json.stringify(i))].join("")
+}a(h);
+return true
+}}
+}()
+};;
+if(!gadgets.rpc){gadgets.rpc=function(){var D="__cb";
+var J="";
+var K="__ack";
+var f=500;
+var y=10;
+var c="|";
+var n={};
+var M={};
+var u={};
+var t={};
+var r=0;
+var j={};
+var k={};
+var H={};
+var e={};
+var l={};
+var v={};
+var s=(window.top!==window.self);
+var p=window.name;
+var B=function(){};
+var G=0;
+var P=1;
+var a=2;
+var I=(function(){function T(U){return function(){gadgets.log("gadgets.rpc."+U+"("+gadgets.json.stringify(Array.prototype.slice.call(arguments))+"): call ignored. [caller: "+document.location+", isChild: "+s+"]")
+}
+}return{getCode:function(){return"noop"
+},isParentVerifiable:function(){return true
+},init:T("init"),setup:T("setup"),call:T("call")}
+})();
+if(gadgets.util){e=gadgets.util.getUrlParameters()
+}function C(){return typeof window.postMessage==="function"?gadgets.rpctx.wpm:typeof window.postMessage==="object"?gadgets.rpctx.wpm:window.ActiveXObject?gadgets.rpctx.nix:navigator.userAgent.indexOf("WebKit")>0?gadgets.rpctx.rmr:navigator.product==="Gecko"?gadgets.rpctx.frameElement:gadgets.rpctx.ifpc
+}function i(Y,W){var U=z;
+if(!W){U=I
+}l[Y]=U;
+var T=v[Y]||[];
+for(var V=0;
+V<T.length;
+++V){var X=T[V];
+X.t=x(Y);
+U.call(Y,X.f,X)
+}v[Y]=[]
+}var A=false,L=false;
+function F(){if(L){return
+}function T(){A=true
+}gadgets.util.attachBrowserEvent(window,"unload",T,false);
+L=true
+}function h(T,X,U,W,V){if(!t[X]||t[X]!==U){gadgets.error("Invalid auth token. "+t[X]+" vs "+U);
+B(X,a)
+}V.onunload=function(){if(k[X]&&!A){B(X,P);
+gadgets.rpc.removeReceiver(X)
+}};
+F();
+W=gadgets.json.parse(decodeURIComponent(W));
+z.relayOnload(X,W)
+}function Q(U){if(U&&typeof U.s==="string"&&typeof U.f==="string"&&U.a instanceof Array){if(t[U.f]){if(t[U.f]!==U.t){gadgets.error("Invalid auth token. "+t[U.f]+" vs "+U.t);
+B(U.f,a)
+}}if(U.s===K){window.setTimeout(function(){i(U.f,true)
+},0);
+return
+}if(U.c){U.callback=function(V){gadgets.rpc.call(U.f,D,null,U.c,V)
+}
+}var T=(n[U.s]||n[J]).apply(U,U.a);
+if(U.c&&typeof T!=="undefined"){gadgets.rpc.call(U.f,D,null,U.c,T)
+}}}function o(V){if(!V){return""
+}V=V.toLowerCase();
+if(V.indexOf("//")==0){V=window.location.protocol+V
+}if(V.indexOf("://")==-1){V=window.location.protocol+"//"+V
+}var W=V.substring(V.indexOf("://")+3);
+var T=W.indexOf("/");
+if(T!=-1){W=W.substring(0,T)
+}var Y=V.substring(0,V.indexOf("://"));
+var X="";
+var Z=W.indexOf(":");
+if(Z!=-1){var U=W.substring(Z+1);
+W=W.substring(0,Z);
+if((Y==="http"&&U!=="80")||(Y==="https"&&U!=="443")){X=":"+U
+}}return Y+"://"+W+X
+}function w(U,T){return"/"+U+(T?c+T:"")
+}function q(W){if(W.charAt(0)=="/"){var U=W.indexOf(c);
+var V=U>0?W.substring(1,U):W.substring(1);
+var T=U>0?W.substring(U+1):null;
+return{id:V,origin:T}
+}else{return null
+}}function S(V){if(typeof V==="undefined"||V===".."){return window.parent
+}var U=q(V);
+if(U){return window.top.frames[U.id]
+}V=String(V);
+var T=window.frames[V];
+if(T){return T
+}T=document.getElementById(V);
+if(T&&T.contentWindow){return T.contentWindow
+}return null
+}var z=C();
+n[J]=function(){gadgets.warn("Unknown RPC service: "+this.s)
+};
+n[D]=function(U,T){var V=j[U];
+if(V){delete j[U];
+V(T)
+}};
+function O(W,U,T){if(k[W]===true){return
+}if(typeof k[W]==="undefined"){k[W]=0
+}var V=S(W);
+if(W===".."||V!=null){if(z.setup(W,U,T)===true){k[W]=true;
+return
+}}if(k[W]!==true&&k[W]++<y){window.setTimeout(function(){O(W,U,T)
+},f)
+}else{l[W]=I;
+k[W]=true
+}}function E(U,X){if(typeof H[U]==="undefined"){H[U]=false;
+var W=gadgets.rpc.getRelayUrl(U);
+if(o(W)!==o(window.location.href)){return false
+}var V=S(U);
+try{H[U]=V.gadgets.rpc.receiveSameDomain
+}catch(T){gadgets.error("Same domain call failed: parent= incorrectly set.")
+}}if(typeof H[U]==="function"){H[U](X);
+return true
+}return false
+}function R(U,T,V){if(!/http(s)?:\/\/.+/.test(T)){if(T.indexOf("//")==0){T=window.location.protocol+T
+}else{if(T.charAt(0)=="/"){T=window.location.protocol+"//"+window.location.host+T
+}else{if(T.indexOf("://")==-1){T=window.location.protocol+"//"+T
+}}}}M[U]=T;
+u[U]=!!V
+}function x(T){return t[T]
+}function d(T,V,U){V=V||"";
+t[T]=String(V);
+O(T,V,U)
+}function b(T,V){function W(ab){var ad=ab?ab.rpc:{};
+var Y=ad.parentRelayUrl;
+if(Y.substring(0,7)!=="http://"&&Y.substring(0,8)!=="https://"&&Y.substring(0,2)!=="//"){if(typeof e.parent==="string"&&e.parent!==""){if(Y.substring(0,1)!=="/"){var X=e.parent.lastIndexOf("/");
+Y=e.parent.substring(0,X+1)+Y
+}else{Y=o(e.parent)+Y
+}}}var aa=ad.useLegacyProtocol;
+if(typeof aa=="string"){aa=(aa=="true")
+}var ac=!!aa;
+R("..",Y,ac);
+if(ac){z=gadgets.rpctx.ifpc;
+z.init(Q,i)
+}var Z=V||e.forcesecure||false;
+d("..",T,Z)
+}var U={parentRelayUrl:gadgets.config.NonEmptyStringValidator};
+gadgets.config.register("rpc",U,W)
+}function N(W,T,X){var U=X||e.forcesecure||false;
+var V=T||e.parent;
+if(V){R("..",V);
+d("..",W,U)
+}}function m(V,X,T,W){if(V.charAt(0)!="/"){if(!gadgets.util){return
+}var ab=document.getElementById(V);
+if(!ab){throw new Error("Cannot set up gadgets.rpc receiver with ID: "+V+", element not found.")
+}}var Z=X||ab.src;
+R(V,Z);
+var aa=gadgets.util.getUrlParameters(Z);
+var U=T||aa.rpctoken;
+var Y=W||aa.forcesecure;
+d(V,U,Y)
+}function g(T,V,X,W){if(T===".."){var U=X||e.rpctoken||e.ifpctok||"";
+if(window.__isgadget===true){b(U,W)
+}else{N(U,V,W)
+}}else{m(T,V,X,W)
+}}return{config:function(T){if(typeof T.securityCallback==="function"){B=T.securityCallback
+}},register:function(U,T){if(U===D||U===K){throw new Error("Cannot overwrite callback/ack service")
+}if(U===J){throw new Error("Cannot overwrite default service: use registerDefault")
+}n[U]=T
+},unregister:function(T){if(T===D||T===K){throw new Error("Cannot delete callback/ack service")
+}if(T===J){throw new Error("Cannot delete default service: use unregisterDefault")
+}delete n[T]
+},registerDefault:function(T){n[J]=T
+},unregisterDefault:function(){delete n[J]
+},forceParentVerifiable:function(){if(!z.isParentVerifiable()){z=gadgets.rpctx.ifpc
+}},call:function(T,U,Z,X){T=T||"..";
+var Y="..";
+if(T===".."){Y=p
+}else{if(T.charAt(0)=="/"){Y=w(p,gadgets.rpc.getOrigin(location.href))
+}}++r;
+if(Z){j[r]=Z
+}var W={s:U,f:Y,c:Z?r:0,a:Array.prototype.slice.call(arguments,3),t:t[T],l:u[T]};
+if(T!==".."&&q(T)==null&&!document.getElementById(T)){gadgets.log("WARNING: attempted send to nonexistent frame: "+T);
+return
+}if(E(T,W)){return
+}var V=l[T]||z;
+if(!V){if(!v[T]){v[T]=[W]
+}else{v[T].push(W)
+}return
+}if(u[T]){V=gadgets.rpctx.ifpc
+}if(V.call(T,Y,W)===false){l[T]=I;
+z.call(T,Y,W)
+}},getRelayUrl:function(U){var T=M[U];
+if(T&&T.substring(0,1)==="/"){if(T.substring(1,2)==="/"){T=document.location.protocol+T
+}else{T=document.location.protocol+"//"+document.location.host+T
+}}return T
+},setRelayUrl:R,setAuthToken:d,setupReceiver:g,getAuthToken:x,removeReceiver:function(T){delete M[T];
+delete u[T];
+delete t[T];
+delete k[T];
+delete H[T];
+delete l[T]
+},getRelayChannel:function(){return z.getCode()
+},receive:function(U,T){if(U.length>4){Q(gadgets.json.parse(decodeURIComponent(U[U.length-1])))
+}else{h.apply(null,U.concat(T))
+}},receiveSameDomain:function(T){T.a=Array.prototype.slice.call(T.a);
+window.setTimeout(function(){Q(T)
+},0)
+},getOrigin:o,getReceiverOrigin:function(V){var U=l[V];
+if(!U){return null
+}if(!U.isParentVerifiable(V)){return null
+}var T=gadgets.rpc.getRelayUrl(V)||gadgets.util.getUrlParameters().parent;
+return gadgets.rpc.getOrigin(T)
+},init:function(){if(z.init(Q,i)===false){z=I
+}if(s){g("..")
+}},_getTargetWin:S,_parseSiblingId:q,_createRelayIframe:function(T,V){var Y=gadgets.rpc.getRelayUrl("..");
+if(!Y){return null
+}var X=Y+"#..&"+p+"&"+T+"&"+encodeURIComponent(gadgets.json.stringify(V));
+var U=document.createElement("iframe");
+U.style.border=U.style.width=U.style.height="0px";
+U.style.visibility="hidden";
+U.style.position="absolute";
+function W(){document.body.appendChild(U);
+U.src='javascript:"<html></html>"';
+U.src=X
+}if(document.body){W()
+}else{gadgets.util.registerOnLoadHandler(function(){W()
+})
+}return U
+},ACK:K,RPC_ID:p,SEC_ERROR_LOAD_TIMEOUT:G,SEC_ERROR_FRAME_PHISH:P,SEC_ERROR_FORGED_MSG:a}
+}();
+gadgets.rpc.init()
+};;
+gadgets.Prefs.prototype.set=function(d,e){var g=false;
+if(arguments.length>2){var f={};
+for(var c=0,b=arguments.length;
+c<b;
+c+=2){f[arguments[c]]=arguments[c+1]
+}g=gadgets.Prefs.setInternal_(f)
+}else{g=gadgets.Prefs.setInternal_(d,e)
+}if(!g){return
+}var a=[null,"set_pref",null,gadgets.util.getUrlParameters().ifpctok||gadgets.util.getUrlParameters().rpctoken||0].concat(Array.prototype.slice.call(arguments));
+gadgets.rpc.call.apply(gadgets.rpc,a)
+};
+gadgets.Prefs.prototype.setArray=function(c,d){for(var b=0,a=d.length;
+b<a;
+++b){if(typeof d[b]!=="number"){d[b]=d[b].replace(/\|/g,"%7C")
+}}this.set(c,d.join("|"))
+};;
+gadgets.config.init({"shindig.auth":{"authToken":"","trustedJson":""},"rpc":{"parentRelayUrl":"/rpc_relay.html"},"core.util":{"setprefs":{},"core":{}},"core.io":{"jsonProxyUrl":"//%host%/gadgets/makeRequest","proxyUrl":"//www-open-opensocial.googleusercontent.com/gadgets/proxy/refresh=%refresh%&container=%container%%rewriteMime%&gadget=%gadget%/%rawurl%"}});
+</script><script>gadgets.Prefs.setMessages_({});gadgets.Prefs.setDefaultPrefs_({"merkki":"0","paikka":""});gadgets.io.preloaded_=[];</script></head><body dir="ltr">&nbsp;<br>
+<table width="100%"><tbody><tr><td align="center">
+
+    <iframe frameborder="0" height="240" id="saakohta" marginheight="0" marginwidth="0" scrolling="no" src="./Cornell CS Prospective Grad Student Visit Day 2010_files/alku.htm" width="280"></iframe>
+</td></tr></tbody></table>
+     
+  <script>gadgets.util.runOnLoadHandlers();</script></body></html>
